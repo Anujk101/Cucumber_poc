@@ -1,0 +1,11 @@
+language: python
+
+python:
+  - "3.7"
+
+cache: pip
+
+script:
+  - pipenv sync
+  - pipenv shell
+  - pytest test.py -s
