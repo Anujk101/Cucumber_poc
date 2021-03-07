@@ -6,6 +6,5 @@ python:
 cache: pip
 
 script:
-  - pipenv sync
-  - pip3 install pytest-bdd
+  - pipenv install
   - pytest test.py -s
