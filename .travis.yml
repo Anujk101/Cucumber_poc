@@ -7,4 +7,5 @@ cache: pip
 
 script:
   - pipenv sync
+  - pipenv run
   - pytest test.py -s
