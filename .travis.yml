@@ -7,6 +7,6 @@ cache: pip
 
 script:
   - pipenv install
-  - pytest test.py -s --cucumberjson="reports.json"
+  - pytest test.py --cucumberjson="reports.json"
 
 after_script: -curl -X POST -F file=@reports.json https://studio.cucumber.io/import_test_reports/8155584402743649471744242885878660671803111913263715265/519702/cucumber-json
