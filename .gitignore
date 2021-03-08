@@ -2,3 +2,6 @@
 .pytest_cache
 .venv/
 /pythonenv*/
+.cache
+/__pycache__/
+.reports.json
